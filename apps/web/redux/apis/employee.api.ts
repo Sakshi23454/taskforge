@@ -4,7 +4,7 @@ import { CONVOSEND_CREATE_REQUEST, CONVOSEND_CREATE_RESPONSE, CONVOSEND_FETCH_RE
 
 export const employeeApi = createApi({
     reducerPath: "employeeApi",
-    baseQuery: fetchBaseQuery({ baseUrl: `${APP_URL}/api/employee`, credentials: "include" }),
+    baseQuery: fetchBaseQuery({ baseUrl: `/api/employee`, credentials: "include" }),
     tagTypes: ["task"],
     endpoints: (builder) => {
         return {

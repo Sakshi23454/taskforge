@@ -5,7 +5,8 @@ import { DELETE_TASK_REQUEST, DELETE_TASK_RESPONSE, UPDATE_TASK_DETAILS_REQUEST,
 
 export const adminApi = createApi({
     reducerPath: "adminApi",
-    baseQuery: fetchBaseQuery({ baseUrl: `${APP_URL}/api/admin`, credentials: "include" }),
+    // baseQuery: fetchBaseQuery({ baseUrl: `${APP_URL}/api/admin`, credentials: "include" }),
+    baseQuery: fetchBaseQuery({ baseUrl: `/api/admin`, credentials: "include" }),
     tagTypes: ["profile", "employee", "task"],
     endpoints: (builder) => {
         return {
